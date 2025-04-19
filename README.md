@@ -1,1 +1,2 @@
 # Personal-AI-Lawyer
+This Project uses Hugging face and langchain to create a RAG application that takes in a PDF file and a prompt as input and returns the answer as a personal lawyer.
