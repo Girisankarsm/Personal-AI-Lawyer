@@ -1,0 +1,10 @@
+documents=20
+chunks=68
+chunk_size=800
+chunk_overlap=120
+sources:
+  - local_pdf:universal_declaration_of_human_rights.pdf
+  - seed:iccpr_selected.txt
+  - seed:udhr_articles.txt
+  - seed:us_bill_of_rights.txt
+  - seed:us_constitution_selected.txt

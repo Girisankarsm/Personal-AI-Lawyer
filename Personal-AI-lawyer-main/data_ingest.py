@@ -73,10 +73,13 @@ def load_local_pdfs() -> List[Dict[str, Any]]:
         return records
 
     candidates: List[Path] = []
+    seen_names: set[str] = set()
     if PDFS_DIR.exists():
-        candidates.extend(sorted(PDFS_DIR.glob("*.pdf")))
+        for pdf_path in sorted(PDFS_DIR.glob("*.pdf")):
+            candidates.append(pdf_path)
+            seen_names.add(pdf_path.name)
     root_udhr = ROOT / "universal_declaration_of_human_rights.pdf"
-    if root_udhr.exists() and root_udhr not in candidates:
+    if root_udhr.exists() and root_udhr.name not in seen_names:
         candidates.append(root_udhr)
 
     for pdf_path in candidates:

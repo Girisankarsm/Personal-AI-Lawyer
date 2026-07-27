@@ -243,11 +243,9 @@ def retrieve_docs(query: str, faiss_db=None, k: Optional[int] = None) -> List[Do
         return []
 
     fetch_k = max(top_k, FETCH_K)
-    try:
-        scored = db.similarity_search_with_relevance_scores(query, k=fetch_k)
-        candidates = [doc for doc, _score in scored]
-    except Exception:  # noqa: BLE001
-        candidates = db.similarity_search(query, k=fetch_k)
+    # Use plain similarity_search — relevance-score normalization often warns/fails
+    # with normalized MiniLM embeddings on small corpora.
+    candidates = db.similarity_search(query, k=fetch_k)
 
     reranker = _get_cross_encoder()
     if reranker is not None and len(candidates) > top_k:

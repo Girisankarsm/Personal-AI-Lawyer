@@ -58,6 +58,15 @@ mobile-first — try it on your phone’s browser on the same network if desired
 
 Upload a PDF in the app to index it locally for that session’s answers.
 
+### Rebuild the free legal corpus (Agent 2)
+
+```bash
+python build_index.py
+```
+
+This refreshes `vectorstore/db_faiss_legal` from free public-domain sources.
+The app picks it up automatically on the next question.
+
 ## Important disclaimer
 
 This project is for **educational research only**. It is not a lawyer and does
