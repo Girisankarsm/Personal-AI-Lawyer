@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Personal AI Lawyer  local legal research assistant">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d7ebe4">
+        <animate attributeName="stop-color" values="#d7ebe4;#cfe0ea;#d7ebe4" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#eef3f1"/>
+      <stop offset="100%" stop-color="#c5ddd6">
+        <animate attributeName="stop-color" values="#c5ddd6;#b8d4e0;#c5ddd6" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2f6f64" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#2f6f64" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#2f6f64" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <rect width="1200" height="420" fill="url(#glow)"/>
+
+  <!-- Soft floating orbs -->
+  <circle cx="160" cy="90" r="48" fill="#2f6f64" opacity="0.08">
+    <animate attributeName="cy" values="90;70;90" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1040" cy="320" r="70" fill="#1a4d45" opacity="0.07">
+    <animate attributeName="cy" values="320;300;320" dur="7.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="920" cy="80" r="36" fill="#3d7a8c" opacity="0.1">
+    <animate attributeName="cx" values="920;940;920" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Pipeline nodes: Query ’ Retrieve ’ Answer -->
+  <g transform="translate(90, 280)">
+    <rect x="0" y="0" width="140" height="44" rx="12" fill="#ffffff" stroke="#1a4d45" stroke-opacity="0.18"/>
+    <text x="70" y="28" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#1a4d45">Ask</text>
+    <line x1="148" y1="22" x2="198" y2="22" stroke="url(#beam)" stroke-width="3">
+      <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </line>
+    <!-- traveling dot -->
+    <circle r="5" fill="#2f6f64">
+      <animateMotion dur="2.2s" repeatCount="indefinite" path="M148,22 L198,22"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <rect x="206" y="0" width="160" height="44" rx="12" fill="#ffffff" stroke="#1a4d45" stroke-opacity="0.18"/>
+    <text x="286" y="28" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#1a4d45">Retrieve</text>
+    <line x1="374" y1="22" x2="424" y2="22" stroke="url(#beam)" stroke-width="3">
+      <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="2.2s" begin="0.7s" repeatCount="indefinite"/>
+    </line>
+    <circle r="5" fill="#2f6f64">
+      <animateMotion dur="2.2s" begin="0.7s" repeatCount="indefinite" path="M374,22 L424,22"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.2s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+
+    <rect x="432" y="0" width="150" height="44" rx="12" fill="#1a4d45"/>
+    <text x="507" y="28" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#eef3f1">Answer</text>
+  </g>
+
+  <!-- Scales of justice (animated sway) -->
+  <g transform="translate(900, 70)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-4 0 40;4 0 40;-4 0 40" dur="4.5s" repeatCount="indefinite"/>
+      <!-- beam -->
+      <line x1="-90" y1="40" x2="90" y2="40" stroke="#1a4d45" stroke-width="5" stroke-linecap="round"/>
+      <!-- left pan hangers -->
+      <line x1="-70" y1="40" x2="-90" y2="95" stroke="#2f6f64" stroke-width="2.5"/>
+      <line x1="-70" y1="40" x2="-50" y2="95" stroke="#2f6f64" stroke-width="2.5"/>
+      <ellipse cx="-70" cy="100" rx="32" ry="10" fill="#c5ddd6" stroke="#1a4d45" stroke-width="2"/>
+      <!-- right pan hangers -->
+      <line x1="70" y1="40" x2="50" y2="95" stroke="#2f6f64" stroke-width="2.5"/>
+      <line x1="70" y1="40" x2="90" y2="95" stroke="#2f6f64" stroke-width="2.5"/>
+      <ellipse cx="70" cy="100" rx="32" ry="10" fill="#c5ddd6" stroke="#1a4d45" stroke-width="2"/>
+      <!-- fulcrum tip -->
+      <circle cx="0" cy="40" r="7" fill="#1a4d45"/>
+    </g>
+    <!-- post -->
+    <line x1="0" y1="40" x2="0" y2="190" stroke="#1a4d45" stroke-width="6" stroke-linecap="round"/>
+    <rect x="-36" y="186" width="72" height="12" rx="4" fill="#1a4d45"/>
+  </g>
+
+  <!-- Floating document cards -->
+  <g opacity="0.95">
+    <g transform="translate(620, 95)">
+      <animateTransform attributeName="transform" type="translate" values="620,95;620,82;620,95" dur="5s" repeatCount="indefinite"/>
+      <rect width="88" height="110" rx="10" fill="#ffffff" stroke="#1a4d45" stroke-opacity="0.2"/>
+      <rect x="14" y="22" width="60" height="6" rx="3" fill="#c5ddd6"/>
+      <rect x="14" y="38" width="48" height="6" rx="3" fill="#c5ddd6"/>
+      <rect x="14" y="54" width="56" height="6" rx="3" fill="#c5ddd6"/>
+      <rect x="14" y="70" width="40" height="6" rx="3" fill="#c5ddd6"/>
+      <text x="44" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#2f6f64">PDF</text>
+    </g>
+    <g transform="translate(730, 130)">
+      <animateTransform attributeName="transform" type="translate" values="730,130;730,118;730,130" dur="5.8s" begin="0.8s" repeatCount="indefinite"/>
+      <rect width="88" height="110" rx="10" fill="#ffffff" stroke="#1a4d45" stroke-opacity="0.2"/>
+      <rect x="14" y="22" width="60" height="6" rx="3" fill="#b8d4e0"/>
+      <rect x="14" y="38" width="52" height="6" rx="3" fill="#b8d4e0"/>
+      <rect x="14" y="54" width="44" height="6" rx="3" fill="#b8d4e0"/>
+      <rect x="14" y="70" width="58" height="6" rx="3" fill="#b8d4e0"/>
+      <text x="44" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#3d7a8c">LAW</text>
+    </g>
+  </g>
+
+  <!-- Title block -->
+  <text x="90" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#152826">Personal AI Lawyer</text>
+  <text x="90" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#3d524e">Free · Local · Private legal research</text>
+
+  <!-- Tech chips with subtle pulse -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#1a4d45">
+    <g>
+      <rect x="90" y="198" width="92" height="32" rx="16" fill="#ffffff" stroke="#1a4d45" stroke-opacity="0.15"/>
+      <text x="136" y="219" text-anchor="middle">Streamlit</text>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="194" y="198" width="72" height="32" rx="16" fill="#ffffff" stroke="#1a4d45" stroke-opacity="0.15"/>
+      <text x="230" y="219" text-anchor="middle">FAISS</text>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="278" y="198" width="84" height="32" rx="16" fill="#ffffff" stroke="#1a4d45" stroke-opacity="0.15"/>
+      <text x="320" y="219" text-anchor="middle">Ollama</text>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="374" y="198" width="70" height="32" rx="16" fill="#ffffff" stroke="#1a4d45" stroke-opacity="0.15"/>
+      <text x="409" y="219" text-anchor="middle">RAG</text>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="412" width="1200" height="8" fill="#1a4d45" opacity="0.85"/>
+  <rect x="0" y="412" width="200" height="8" fill="#2f6f64">
+    <animate attributeName="x" values="0;1000;0" dur="10s" repeatCount="indefinite"/>
+  </rect>
+</svg>
