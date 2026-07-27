@@ -6,7 +6,8 @@
 
 ## What this index contains
 
-The FAISS store at `vectorstore/db_faiss` is built by `build_index.py` from free / openly available materials:
+The free legal corpus is built by `build_index.py` into `vectorstore/db_faiss_legal`
+(and mirrored to `vectorstore/db_faiss`) from free / openly available materials:
 
 | Source | License / notes | How loaded |
 |---|---|---|
@@ -36,7 +37,7 @@ python build_index.py --force --skip-remote
 ```
 
 Cached corpus: `data/cache/corpus.jsonl`  
-Index: `vectorstore/db_faiss/`
+Index: `vectorstore/db_faiss_legal/` (mirrored to `vectorstore/db_faiss/`)
 
 ## Retrieval improvements
 
