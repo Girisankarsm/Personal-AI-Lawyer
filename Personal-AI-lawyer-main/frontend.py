@@ -1,15 +1,9 @@
 """
-Deprecated entry point.
+Deprecated entry point. Prefer: streamlit run app.py
 
-Run the unified app instead:
-
-    streamlit run app.py
-
-This file remains only so old shortcuts keep working.
+Kept so older shortcuts still launch the unified UI.
 """
 
-import runpy
-from pathlib import Path
+from app import main
 
-print("frontend.py is deprecated — launching app.py …")
-runpy.run_path(str(Path(__file__).resolve().parent / "app.py"), run_name="__main__")
+main()

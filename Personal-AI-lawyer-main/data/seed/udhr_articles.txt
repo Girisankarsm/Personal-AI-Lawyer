@@ -1,0 +1,67 @@
+---
+title: Universal Declaration of Human Rights (articles)
+jurisdiction: international
+citation: UDHR (1948)
+license: United Nations document; widely treated as freely reproducible for educational use
+source: seed:udhr_articles.txt
+---
+Article 1
+All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
+
+Article 2
+Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.
+
+Article 3
+Everyone has the right to life, liberty and security of person.
+
+Article 4
+No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.
+
+Article 5
+No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.
+
+Article 6
+Everyone has the right to recognition everywhere as a person before the law.
+
+Article 7
+All are equal before the law and are entitled without any discrimination to equal protection of the law. All are entitled to equal protection against any discrimination in violation of this Declaration and against any incitement to such discrimination.
+
+Article 8
+Everyone has the right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted him by the constitution or by law.
+
+Article 9
+No one shall be subjected to arbitrary arrest, detention or exile.
+
+Article 10
+Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him.
+
+Article 11
+(1) Everyone charged with a penal offence has the right to be presumed innocent until proved guilty according to law in a public trial at which he has had all the guarantees necessary for his defence.
+(2) No one shall be held guilty of any penal offence on account of any act or omission which did not constitute a penal offence, under national or international law, at the time when it was committed. Nor shall a heavier penalty be imposed than the one that was applicable at the time the penal offence was committed.
+
+Article 12
+No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.
+
+Article 18
+Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.
+
+Article 19
+Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.
+
+Article 20
+(1) Everyone has the right to freedom of peaceful assembly and association.
+(2) No one may be compelled to belong to an association.
+
+Article 21
+(1) Everyone has the right to take part in the government of his country, directly or through freely chosen representatives.
+(2) Everyone has the right to equal access to public service in his country.
+(3) The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures.
+
+Article 25
+(1) Everyone has the right to a standard of living adequate for the health and well-being of himself and of his family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.
+(2) Motherhood and childhood are entitled to special care and assistance. All children, whether born in or out of wedlock, shall enjoy the same social protection.
+
+Article 26
+(1) Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.
+(2) Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms. It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.
+(3) Parents have a prior right to choose the kind of education that shall be given to their children.

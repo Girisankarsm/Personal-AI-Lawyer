@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# Local caches / large artifacts
+Personal-AI-lawyer-main/data/cache/
+Personal-AI-lawyer-main/data/raw/
+Personal-AI-lawyer-main/models/
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

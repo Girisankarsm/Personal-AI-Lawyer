@@ -9,4 +9,8 @@ faiss-cpu
 pdfplumber
 streamlit
 sentence-transformers
-dotenv
+python-dotenv
+datasets
+huggingface_hub
+torch
+pypdf

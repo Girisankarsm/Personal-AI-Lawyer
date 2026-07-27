@@ -45,7 +45,7 @@ CUSTOM_CSS = """
   --card: #ffffff;
   --line: rgba(26, 77, 69, 0.12);
   --warn: #6b4f1d;
-  --warn-bg: #f4 indeede8c;
+  --warn-bg: #faf6ee;
   --radius: 18px;
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-top: env(safe-area-inset-top, 0px);
@@ -247,9 +247,6 @@ label, .stMarkdown label {
 }
 </style>
 """
-
-# Fix typo in CSS var
-CUSTOM_CSS = CUSTOM_CSS.replace("--warn-bg: #f4 indeede8c;", "--warn-bg: #faf6ee;")
 
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 

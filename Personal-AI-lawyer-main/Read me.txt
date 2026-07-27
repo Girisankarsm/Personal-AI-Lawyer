@@ -1,1 +1,4 @@
-This Project uses Hugging face and langchain to create a RAG application that takes in a PDF file and a prompt as input and returns the answer as a personal lawyer.
+Personal AI Lawyer — free local RAG (Streamlit + FAISS + Ollama).
+
+See README.md for setup. Run: streamlit run app.py
+No Groq / paid LLM keys needed.
