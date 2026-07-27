@@ -8,12 +8,7 @@ from typing import Any, Optional
 
 from langchain_core.prompts import ChatPromptTemplate
 
-from vector_database import (
-    ensure_seed_index_from_udhr,
-    get_context,
-    load_default_vector_store,
-    retrieve_docs as _retrieve_docs,
-)
+from vector_database import get_context, retrieve_docs as _retrieve_docs
 
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")

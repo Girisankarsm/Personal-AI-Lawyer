@@ -21,10 +21,10 @@ CORPUS_PATH = CACHE_DIR / "corpus.jsonl"
 
 # Disk-safe caps (full open corpora are multi-GB; keep a useful local slice)
 MAX_CONSTITUTIONS = 7762
-MAX_STATUTES = 6000
-MAX_US_CODE = 5000
-MAX_CASE_HOLD = 4000
-MAX_PILE_EURLEX = 2000
+MAX_STATUTES = 4000
+MAX_US_CODE = 3000
+MAX_CASE_HOLD = 3000
+MAX_PILE_EURLEX = 1500
 
 MIN_TEXT_CHARS = 80
 
