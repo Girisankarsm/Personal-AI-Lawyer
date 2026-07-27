@@ -20,3 +20,4 @@ Personal-AI-lawyer-main/models/
 .DS_Store
 .idea/
 .vscode/
+Personal-AI-lawyer-main/data/hf_cache/
